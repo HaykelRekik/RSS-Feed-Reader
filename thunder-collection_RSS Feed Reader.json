@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "RSS Feed Reader",
+    "dateExported": "2023-02-16T03:34:49.123Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d0bcdc0f-2837-4bb1-8ec3-0fdb0e7abee6",
+            "colId": "1b391455-6737-49eb-9795-b816ba5fd6c6",
+            "containerId": "",
+            "name": "Import Articles",
+            "url": "/import",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-02-15T23:15:45.673Z",
+            "modified": "2023-02-16T01:43:10.567Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"siteRssUrl\": \"https://feeds.feedburner.com/experiment_podcast\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5798e4f8-fd5c-4afe-82a5-6ab70a1adf9d",
+            "colId": "1b391455-6737-49eb-9795-b816ba5fd6c6",
+            "containerId": "",
+            "name": "Get Articles",
+            "url": "/articles",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-02-16T00:58:57.934Z",
+            "modified": "2023-02-16T00:59:04.245Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Accept",
+                "value": "application/json"
+            }
+        ],
+        "tests": [],
+        "options": {
+            "baseUrl": "http://feed-reader.test/api"
+        }
+    }
+}
